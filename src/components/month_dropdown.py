@@ -2,7 +2,7 @@ from dash import Dash, html, dcc
 from dash.dependencies import Input, Output
 import pandas as pd
 from . import ids
-from .configure_transactions import DataSchema
+from ..file_config.configure_file import DataSchema
 
 def render(app: Dash, data: pd.DataFrame) -> html.Div:
     all_months: list[str] = data[DataSchema.MONTH]

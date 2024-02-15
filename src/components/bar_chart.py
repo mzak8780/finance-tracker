@@ -2,7 +2,7 @@ from dash import Dash, dcc, html
 import pandas as pd
 from dash.dependencies import Input, Output
 import plotly.express as px
-from .configure_transactions import DataSchema
+from ..file_config.configure_file import DataSchema
 
 from . import ids
 

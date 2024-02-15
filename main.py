@@ -1,7 +1,7 @@
 from dash import Dash, html, dcc
 from dash_bootstrap_components.themes import BOOTSTRAP
 from src.components.layout import create_layout
-from src.components.configure_transactions import configureFile
+from src.file_config.configure_file import configureFile
 
 DATA_PATH = "./data/Transactions.csv"
 
