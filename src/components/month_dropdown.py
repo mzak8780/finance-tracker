@@ -17,7 +17,6 @@ def render(app: Dash, data: pd.DataFrame) -> html.Div:
     )   
     def update_months(years: list[str], _: int) -> list[str]:
        filtered_data = data.query("Year in @years")
-       print(set(filtered_data[DataSchema.MONTH]))
        return sorted(set(filtered_data[DataSchema.MONTH]))
 
     return html.Div(
